@@ -1,0 +1,40 @@
+# Environment
+.env
+*.env
+
+# Credentials (sensitive!)
+credentials/
+*.pickle
+client_secret*.json
+
+# Temp files
+temp/
+*.mp3
+*.mp4
+
+
+client_speech.md
+prod.md
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
