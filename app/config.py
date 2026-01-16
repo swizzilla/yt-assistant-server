@@ -2,7 +2,14 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load .env from the directory containing this config file (app directory)
+# or from the parent directory (yt-assistant-server)
+env_path = Path(__file__).resolve().parent.parent / ".env"
+if env_path.exists():
+    load_dotenv(env_path)
+else:
+    # Fallback to default load_dotenv behavior
+    load_dotenv()
 
 # Base paths
 BASE_DIR = Path(__file__).resolve().parent.parent
